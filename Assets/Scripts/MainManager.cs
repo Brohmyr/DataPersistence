@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+//adding something new so I can do a new commit
 public class MainManager : MonoBehaviour
 {
     public Brick BrickPrefab;
