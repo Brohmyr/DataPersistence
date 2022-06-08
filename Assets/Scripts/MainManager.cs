@@ -71,6 +71,13 @@ public class MainManager : MonoBehaviour
 
     public void GameOver()
     {
+        if (m_Points > GameManager.Instance._bestScore)
+        {
+            GameManager.Instance._bestScore = m_Points;
+            GameManager.Instance._bestPlayerName = GameManager.Instance._playerName;
+            GameManager.Instance.SaveBestScore();
+        }
+        
         m_GameOver = true;
         GameOverText.SetActive(true);
     }
